@@ -10,7 +10,7 @@ client = commands.Bot(command_prefix = '.')
 @client.event
 async def on_ready():
     # RUN COMMANDS
-    #general_channel = client.get_channel(886724634534354966)
+    #general_channel = client.get_channel(886724634534354966) maybe we try getting it to just send a regular message again?
     print('i am prepared for this')
     #await general_channel.send('beep booper is ready')
 
