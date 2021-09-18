@@ -38,4 +38,4 @@ async def on_message(message):
         await general_channel.send(response)
 
 # Run the client on the server
-client.run('ODg4NjMwNTM1MTg0ODcxNDU2.YUVfrQ.mDmgZAN70YNFqm8Kd3JbQznlBX8')
+client.run('ODg4NjMwNTM1MTg0ODcxNDU2.YUVfrQ.ddMzTWNOYFX59z0RRWSCGpCj1Cc')
