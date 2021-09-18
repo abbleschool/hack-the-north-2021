@@ -1,11 +1,7 @@
 # Import Discord Package (pip install python)
-import discord
+#import discord
 
 from discord.ext import commands
-#from discord.utils import get
-
-intents = discord.Intents.default()
-intents.members = True
 
 # Client (our bot)
 #client = discord.Client()
@@ -15,7 +11,7 @@ client = commands.Bot(command_prefix = '.')
 async def on_ready():
     # RUN COMMANDS
     #general_channel = client.get_channel(886724634534354966)
-    print('i am prepared')
+    print('i am prepared for this')
     #await general_channel.send('beep booper is ready')
 
 @client.command()
@@ -28,7 +24,10 @@ async def test(ctx):
     #response = f'Suck my pp {ping.mention}'
     #await general_channel.send(response)
 
-#client.add_command(test)
+@client.command()
+async def parrot(ctx, *, arg):
+    await ctx.send(arg)
+
 
 @client.event
 async def on_message(message):
@@ -39,4 +38,4 @@ async def on_message(message):
         await general_channel.send(response)
 
 # Run the client on the server
-client.run('ODg4NjMwNTM1MTg0ODcxNDU2.YUVfrQ.wc3NfkuGUrWJ9DqBIkm0JG2w9_s')
+client.run('ODg4NjMwNTM1MTg0ODcxNDU2.YUVfrQ.7XKSZbkM98SllgzOE6mAU47JlgE')
