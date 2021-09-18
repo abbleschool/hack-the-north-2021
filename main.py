@@ -1,5 +1,5 @@
 # Import Discord Package (pip install python)
-#import discord
+import discord
 
 from discord.ext import commands
 
